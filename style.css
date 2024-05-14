@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.7) url('food2.jpg') center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1{
+    color: rgb(98, 228, 98);
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #eedcdc;
+    padding: 4px;
+    transition: 3.5s;
+}
+
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px rgb(1, 49, 33) inset,0 3px 50px rgb(94, 255, 0) inset,
+    0 3px 50px rgb(121, 62, 41) inset,0 3px 50px orangered inset;
+}
+
+.navbar .reservation{
+    padding: 8px;
+    background-color: rgb(1, 65, 1);
+}
+
+.content{
+    position: absolute;
+    color: #fff;
+    top: 40%;
+    left: 20%;
+}
+
+.content h3{
+    font-family: "Sedan SC", serif;
+    font-size: 30px;
+    margin-left: 20%;
+}
+
+.content h1{
+    font-family: "Sedan SC", serif;
+    color: rgb(83, 160, 83);
+    font-size: 50px;
+}
+
+.content p{
+    text-align: center;
+    
+    margin-top: 24px;
+    margin-left: -3%;
+
+   
+}
+
+.search{
+    position: absolute;
+    margin-top: 27%;
+    margin-left: 39%;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    padding: 12px 40px;
+    size: 1em;
+    width: 100%;
+}
+
+.submit{
+    position: absolute;
+    margin-top: 33%;
+    margin-left: 47%;
+}
+
+.submit a{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    background-color: rgb(1, 65, 1);
+}
+@media only screen and (max-width:600px) {
+    .container{
+        display: flex;
+    }
+    .container h1{
+        color: rgb(98, 228, 98);
+        margin-left: 5%;
+        cursor: pointer;
+    }
+    .navbar ul li{
+        display: inline-block;
+        padding: 9px;
+        text-transform: uppercase;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        transition: 3.5s;
+    }
+    .navbar .reservation{
+        padding: 5px;
+        background-color:  rgb(1, 65, 1);
+    }
+    .content{
+        position: absolute;
+        color: #fff;
+        top: 80%;
+        left: 5%;
+    }
+    .content h3{
+        font-family: sans-serif;
+        font-size: 15px;
+        margin-left: 1%;
+        text-align: center;
+    }
+    
+    .content h1{
+        font-size: 25px;
+        color: rgb(83, 160, 83);
+        text-align: center;
+    }
+    
+    .content p{
+        text-align: center;
+        margin-top: 13px;
+        
+    
+       
+    }
+    .search{
+        position: absolute;
+        margin-top: 70%;
+        margin-left: 5%;
+    }
+    
+    .search input{
+        outline: none;
+        border: none;
+        padding: 10px 40px;
+        size: 1em;
+        width: 80%;
+    }
+    
+    .submit{
+        position: absolute;
+        margin-top:90%;
+        margin-left: 40%;
+    }
+    
+    .submit a{
+        text-decoration: none;
+        color: #fff;
+        padding: 9px 10px;
+    
+}
+}
